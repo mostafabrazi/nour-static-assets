@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Share+Tech&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet" />
+  <title>Nour app - Privacy Policy</title>
+  <style>
+    body {
+      font-family: "Inter", Arial, sans-serif;
+      line-height: 1.7;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
+      font-family: "Nunito", sans-serif;
+    }
+
+    header {
+      background: #DA8000;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.3rem;
+    }
+
+    .lang-switch {
+      background: white;
+      color: #DA8000;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .lang-switch:hover {
+      background: #fff3e0;
+      color: #b86600;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #DA8000;
+      margin-top: 1.5rem;
+    }
+
+    a {
+      color: #DA8000;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #b86600;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    footer a {
+      color: #DA8000;
+    }
+
+    footer a:hover {
+      color: #b86600;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Nour app - Prayer times reminder</h1>
+    <select id="languageSelect" class="lang-switch">
+      <option value="en">English</option>
+      <option value="nl">Nederlands</option>
+      <option value="ar">العربية</option>
+    </select>
+  </header>
+
+  <main id="policy-content"></main>
+
+  <footer>
+    &copy; 2025 Nour app – All rights reserved.
+  </footer>
+
+  <script>
+    const policies = {
+      en: `
+      <h2>Privacy Policy</h2>
+      <p><strong>Effective Date:</strong> October 4, 2025</p>
+      <p>Nour app – Prayer times reminder (“we,” “our,” or “us”) provides prayer time reminders and notifications to help Muslims in the Netherlands observe their daily prayers. Your privacy is important to us, and this Privacy Policy explains how we handle your information.</p>
+
+      <h2>1. Information We Collect</h2>
+      <ul>
+        <li><strong>Personal Data:</strong> We do not require you to create an account or provide personal information to use our app.</li>
+        <li><strong>Location Data (Optional):</strong> If you allow location access, we may use your device’s location to provide accurate local prayer times. You can disable location access in your device settings.</li>
+        <li><strong>Device Data:</strong> We may collect non-identifiable information such as device type, operating system, and app usage data for app performance and improvement.</li>
+      </ul>
+
+      <h2>2. Permission Requests</h2>
+      <p>Our app may request permission to send in-app notifications. These notifications are used solely to remind you of prayer times. You can enable or disable notifications at any time through your device settings.</p>
+
+      <h2>3. How We Use Information</h2>
+      <p>We use the information we collect to:</p>
+      <ul>
+        <li>Send timely prayer reminders via notifications.</li>
+        <li>Improve app performance and user experience.</li>
+      </ul>
+
+      <h2>4. Data Sharing</h2>
+      <p>We do not sell, trade, or rent your personal data to third parties. We may share non-identifiable usage data with analytics services (e.g., Google Analytics for Firebase) to help improve the app.</p>
+
+      <h2>5. Data Storage & Security</h2>
+      <p>All collected information is stored securely on your device. If optional analytics are enabled, data is handled according to the third-party provider’s privacy policy (e.g., Google Firebase). We take reasonable steps to protect your information from unauthorized access.</p>
+
+      <h2>6. User Rights</h2>
+      <ul>
+        <li>Enable or disable location permissions at any time via device settings.</li>
+        <li>Enable or disable notification permissions at any time via device settings.</li>
+        <li>Uninstall the app at any time, which removes all locally stored data.</li>
+      </ul>
+
+      <h2>7. Children’s Privacy</h2>
+      <p>Our app is safe for all ages and does not knowingly collect personal information from children under 13.</p>
+
+      <h2>8. Changes to This Privacy Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated “Effective Date.”</p>
+
+      <h2>9. Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy or how your data is handled, please contact us:</p>
+      <p>Email: <a href="mailto:nourapp.dev@gmail.com">nourapp.dev@gmail.com</a><br>
+      Website: <a href="https://prayers-nour-app.netlify.app/">https://prayers-nour-app.netlify.app/</a></p>
+    `,
+
+      nl: `
+      <h2>Privacybeleid</h2>
+      <p><strong>Ingangsdatum:</strong> 4 oktober 2025</p>
+      <p>Nour app – Prayer times reminder (“wij”, “ons”) biedt gebedstijdherinneringen om moslims in Nederland te helpen hun dagelijkse gebeden op tijd uit te voeren. Uw privacy is belangrijk voor ons, en dit beleid legt uit hoe wij met uw gegevens omgaan.</p>
+
+      <h2>1. Gegevens die wij verzamelen</h2>
+      <ul>
+        <li><strong>Persoonlijke gegevens:</strong> U hoeft geen account aan te maken of persoonlijke gegevens te verstrekken om onze app te gebruiken.</li>
+        <li><strong>Locatiegegevens (optioneel):</strong> Als u locatietoegang toestaat, gebruiken wij uw locatie om nauwkeurige gebedstijden te berekenen. U kunt dit altijd uitschakelen via uw apparaatinstellingen.</li>
+        <li><strong>Apparaatgegevens:</strong> Wij kunnen niet-identificeerbare gegevens verzamelen, zoals apparaattype, besturingssysteem en app-gebruik, om de prestaties te verbeteren.</li>
+      </ul>
+
+      <h2>2. Toestemmingsverzoeken</h2>
+      <p>Onze app kan toestemming vragen om meldingen te verzenden. Deze meldingen worden uitsluitend gebruikt om u te herinneren aan gebedstijden. U kunt meldingen op elk moment in- of uitschakelen via de instellingen van uw apparaat.</p>
+
+      <h2>3. Gebruik van gegevens</h2>
+      <p>Wij gebruiken uw gegevens om:</p>
+      <ul>
+        <li>Gebedsherinneringen via meldingen te verzenden.</li>
+        <li>De prestaties en gebruikerservaring te verbeteren.</li>
+      </ul>
+
+      <h2>4. Delen van gegevens</h2>
+      <p>Wij verkopen of verhuren uw persoonlijke gegevens niet aan derden. Wij kunnen geanonimiseerde gebruiksgegevens delen met analyseplatforms (zoals Google Firebase) om de app te verbeteren.</p>
+
+      <h2>5. Gegevensopslag & beveiliging</h2>
+      <p>Alle verzamelde informatie wordt veilig op uw apparaat opgeslagen. Indien analyses zijn ingeschakeld, worden gegevens verwerkt volgens het privacybeleid van de betreffende derde partij. Wij nemen redelijke maatregelen om uw gegevens te beschermen.</p>
+
+      <h2>6. Rechten van gebruikers</h2>
+      <ul>
+        <li>U kunt locatierechten op elk moment in- of uitschakelen via de instellingen van uw apparaat.</li>
+        <li>U kunt meldingsrechten op elk moment in- of uitschakelen via de instellingen van uw apparaat.</li>
+        <li>U kunt de app op elk moment verwijderen, waardoor alle lokale gegevens worden gewist.</li>
+      </ul>
+
+      <h2>7. Privacy van kinderen</h2>
+      <p>Onze app is geschikt voor alle leeftijden en verzamelt geen persoonlijke gegevens van kinderen jonger dan 13 jaar.</p>
+
+      <h2>8. Wijzigingen in dit beleid</h2>
+      <p>Wij kunnen dit privacybeleid van tijd tot tijd bijwerken. Eventuele wijzigingen worden op deze pagina geplaatst met een bijgewerkte ingangsdatum.</p>
+
+      <h2>9. Contact</h2>
+      <p>Voor vragen over dit privacybeleid kunt u contact opnemen via:</p>
+      <p>Email: <a href="mailto:nourapp.dev@gmail.com">nourapp.dev@gmail.com</a><br>
+      Website: <a href="https://prayers-nour-app.netlify.app/">https://prayers-nour-app.netlify.app/</a></p>
+    `,
+
+      ar: `
+      <h2>سياسة الخصوصية</h2>
+      <p><strong>تاريخ النفاذ:</strong> 4 أكتوبر 2025</p>
+      <p>تطبيق نور - تذكير بمواقيت الصلاة ("نحن") يوفر إشعارات لتذكير المسلمين في هولندا بمواقيت الصلاة اليومية. خصوصيتك مهمة لنا، وتوضح هذه السياسة كيفية تعاملنا مع معلوماتك.</p>
+
+      <h2>1. المعلومات التي نجمعها</h2>
+      <ul>
+        <li><strong>البيانات الشخصية:</strong> لا نطلب منك إنشاء حساب أو تقديم معلومات شخصية لاستخدام التطبيق.</li>
+        <li><strong>بيانات الموقع (اختياري):</strong> إذا سمحت بالوصول إلى الموقع، قد نستخدم موقع جهازك لحساب أوقات الصلاة بدقة. يمكنك تعطيل الوصول من إعدادات جهازك.</li>
+        <li><strong>بيانات الجهاز:</strong> قد نجمع بيانات غير قابلة للتحديد مثل نوع الجهاز ونظام التشغيل واستخدام التطبيق لتحسين الأداء.</li>
+      </ul>
+
+      <h2>2. طلبات الأذونات</h2>
+      <p>قد يطلب التطبيق إذنًا لإرسال إشعارات داخل التطبيق، وتُستخدم هذه الإشعارات فقط لتذكيرك بأوقات الصلاة. يمكنك تمكين أو تعطيل الإشعارات في أي وقت من إعدادات الجهاز.</p>
+
+      <h2>3. كيفية استخدام المعلومات</h2>
+      <ul>
+        <li>إرسال تذكيرات بالصلاة عبر الإشعارات.</li>
+        <li>تحسين أداء التطبيق وتجربة المستخدم.</li>
+      </ul>
+
+      <h2>4. مشاركة البيانات</h2>
+      <p>نحن لا نبيع أو نؤجر بياناتك الشخصية لأي طرف ثالث. قد نشارك بيانات استخدام مجهولة مع خدمات التحليل (مثل Google Firebase) لتحسين التطبيق.</p>
+
+      <h2>5. تخزين البيانات والأمان</h2>
+      <p>تُخزن جميع المعلومات بأمان على جهازك. في حال تم تفعيل التحليلات، تُعالج البيانات وفقًا لسياسة خصوصية الجهة الخارجية. نتخذ إجراءات معقولة لحماية بياناتك.</p>
+
+      <h2>6. حقوق المستخدم</h2>
+      <ul>
+        <li>يمكنك تمكين أو تعطيل أذونات الموقع في أي وقت.</li>
+        <li>يمكنك تمكين أو تعطيل أذونات الإشعارات في أي وقت.</li>
+        <li>يمكنك حذف التطبيق في أي وقت، وسيتم حذف جميع البيانات المحلية.</li>
+      </ul>
+
+      <h2>7. خصوصية الأطفال</h2>
+      <p>التطبيق آمن لجميع الأعمار ولا يجمع بيانات شخصية من الأطفال دون سن 13 عامًا.</p>
+
+      <h2>8. التغييرات على سياسة الخصوصية</h2>
+      <p>قد نقوم بتحديث سياسة الخصوصية من وقت لآخر. سيتم نشر أي تغييرات على هذه الصفحة مع تحديث تاريخ النفاذ.</p>
+
+      <h2>9. اتصل بنا</h2>
+      <p>لأي استفسارات حول سياسة الخصوصية، يرجى التواصل معنا:</p>
+      <p>البريد الإلكتروني: <a href="mailto:nourapp.dev@gmail.com">nourapp.dev@gmail.com</a><br>
+      الموقع: <a href="https://prayers-nour-app.netlify.app/">https://prayers-nour-app.netlify.app/</a></p>
+    `
+    };
+
+    const content = document.getElementById('policy-content');
+    const select = document.getElementById('languageSelect');
+
+    function setLanguage(lang) {
+      content.innerHTML = policies[lang];
+      document.body.dir = lang === "ar" ? "rtl" : "ltr";
+    }
+
+    select.addEventListener('change', (e) => setLanguage(e.target.value));
+    setLanguage('en');
+  </script>
+
+</body>
+
+</html>
