@@ -256,6 +256,7 @@
 
     const content = document.getElementById('policy-content');
     const select = document.getElementById('languageSelect');
+    const header = document.querySelector('header'); // reference the header
 
     function setLanguage(lang) {
       // fallback to English if language not supported
@@ -272,6 +273,11 @@
     // ✅ Detect language from URL query param
     const params = new URLSearchParams(window.location.search);
     const langFromUrl = params.get('lang'); // e.g. ?lang=nl or ?lang=ar
+
+    // ✅ If a lang param exists, remove the header
+    if (langFromUrl) {
+      header.remove(); // completely removes the header from DOM
+    }
 
     // ✅ Set language from query param or default to English
     const initialLang = langFromUrl || 'en';
