@@ -258,12 +258,34 @@
     const select = document.getElementById('languageSelect');
 
     function setLanguage(lang) {
+      // fallback to English if language not supported
+      if (!policies[lang]) lang = 'en';
+
+      // update dropdown selection
+      select.value = lang;
+
+      // update content and direction
       content.innerHTML = policies[lang];
       document.body.dir = lang === "ar" ? "rtl" : "ltr";
     }
 
-    select.addEventListener('change', (e) => setLanguage(e.target.value));
-    setLanguage('en');
+    // ✅ Detect language from URL query param
+    const params = new URLSearchParams(window.location.search);
+    const langFromUrl = params.get('lang'); // e.g. ?lang=nl or ?lang=ar
+
+    // ✅ Set language from query param or default to English
+    const initialLang = langFromUrl || 'en';
+    setLanguage(initialLang);
+
+    // ✅ Change language manually if user selects from dropdown
+    select.addEventListener('change', (e) => {
+      const newLang = e.target.value;
+      setLanguage(newLang);
+
+      // Optional: update the URL query without reloading
+      const newUrl = `${window.location.pathname}?lang=${newLang}`;
+      window.history.replaceState({}, '', newUrl);
+    });
   </script>
 
 </body>
